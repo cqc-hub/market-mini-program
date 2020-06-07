@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "swipercqc":"/components/swipercqc/swipercqc"
+  },
+  "navigationBarTitleText": "蘑菇街"
 }

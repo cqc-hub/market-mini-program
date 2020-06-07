@@ -1,0 +1,8 @@
+<!--components/swipercqc/swipercqc.wxml-->
+<view class="swipercontentcqc">
+	<swiper class="swipercqc" indicator-dots="{{true}}" autoplay interval="{{3000}}" circular>
+		<swiper-item wx:for="{{banner}}" wx:key="index" class="swipercqc-item">
+			<image src="{{item.image}}" mode="scaleToFill" class="imgcqc"></image>
+		</swiper-item>
+	</swiper>
+</view>

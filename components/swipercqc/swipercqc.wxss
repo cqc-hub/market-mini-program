@@ -1,0 +1,7 @@
+/* components/swipercqc/swipercqc.wxss */
+.swipercontentcqc{
+  position: relative;
+}
+.imgcqc{
+  width: 100%;
+}

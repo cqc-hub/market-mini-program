@@ -1,1 +1,7 @@
 /* pages/index/index.wxss */
+.index-content{
+  position: relative;
+}
+.imgcqc{
+  width: 100%;
+}

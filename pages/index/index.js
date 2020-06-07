@@ -1,18 +1,32 @@
 // pages/index/index.js
+import {getMultidata} from '../../service/index'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    // 轮播图
+    banner:[],
+    recommend:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const _this=this
+    // 获取轮播图、推荐数据
+    getMultidata().then(res=>{
+      // console.log(res)
+      _this.setData({
+        banner:res.data.data.banner.list,
+        recommend:res.data.data.recommend.list
+      })
+       console.log(_this.data.banner)
+    }).catch(err=>{
+      console.log(err)
+    })
   },
 
   /**
