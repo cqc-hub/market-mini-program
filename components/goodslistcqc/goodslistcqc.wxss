@@ -1,0 +1,11 @@
+/* components/goodslistcqc/goodslistcqc.wxss */
+.goods{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 80rpx;
+}
+.goods .item{
+	width: 48%;
+	position: relative;
+}

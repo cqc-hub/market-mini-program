@@ -6,3 +6,14 @@ export function getMultidata(){
     url:'/home/multidata'
   })
 }
+
+//index商品数据 
+export function getGoodsdata(type,page){
+  return request({
+    url:'/home/data',
+    data:{
+      type,
+      page
+    }
+  })
+}

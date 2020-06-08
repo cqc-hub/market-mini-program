@@ -1,0 +1,11 @@
+<!--components/tabcontrolcqc/tabcontrolcqc.wxml-->
+<view class="tab-control">
+  <view wx:for="{{titles}}" class="tab-control-item" wx:key="index">
+  <text class="{{index==currentIndex ? 'active' : ''}} tab-control-c" 
+        bindtap="clickItem"
+        data-index="{{index}}"
+        >
+        {{item}}
+  </text>
+  </view>
+</view>

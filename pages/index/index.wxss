@@ -1,7 +1,11 @@
 /* pages/index/index.wxss */
 .index-content{
+  /*height: 100vh;//端口（屏幕自适应）	*/
   position: relative;
 }
 .imgcqc{
+  width: 100%;
+}
+.pop-img{
   width: 100%;
 }

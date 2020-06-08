@@ -1,0 +1,8 @@
+<!--components/goodslistcqc/goodslistcqc.wxml-->
+
+    <view class="goods">
+      <!-- <goods-list-item v-for="item in goods" :goodsItem="item"></goods-list-item> -->
+      <block wx:for="{{goods}}" wx:key="index">
+       <goodslistitemcqc goodsItem="{{item}}" class="item"/>
+      </block>  
+    </view>

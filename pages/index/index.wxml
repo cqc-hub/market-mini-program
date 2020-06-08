@@ -1,4 +1,10 @@
 <!--pages/index/index.wxml-->
 <view class="index-content">
-    <swipercqc banner="{{banner}}"/>
+	<swipercqc banner="{{banner}}" />
+	<recommendcqc recommend="{{recommend}}" />
+	<view class="pop">
+		<image src="/assets/index/recommend.jpg" class="pop-img"></image>
+	</view>
+	<tabcontrolcqc titles="{{titles}}" bind:TabControlClick="TabControlClick"/>
+	<goodslistcqc goods="{{goods[currentType].list}}"/>
 </view>

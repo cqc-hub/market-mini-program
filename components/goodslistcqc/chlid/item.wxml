@@ -1,0 +1,12 @@
+<!--components/goodslistcqc/chlid/item.wxml-->
+<view class="goods-item" bindtap="itemClick">
+	<image src="{{goodsItem.show.img}}" class="imagecqc" mode="widthFix" lazy-load></image>
+	<view class="goods-info">
+		<view class="title">{{goodsItem.title}}</view>
+		<view class="info">
+			<text class="price">￥{{goodsItem.price}}</text>
+				<text class="collect">{{goodsItem.cfav}}</text>
+		</view>
+	
+	</view>
+</view>

@@ -5,3 +5,6 @@
 .imgcqc{
   width: 100%;
 }
+.swipercqc{
+  height: 350rpx; 
+}

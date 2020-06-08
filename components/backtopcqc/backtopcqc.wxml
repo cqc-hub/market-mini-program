@@ -1,0 +1,4 @@
+<!--components/backtopcqc/backtopcqc.wxml-->
+<view class="backtop">
+<image src=""></image>
+</view>

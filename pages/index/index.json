@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "swipercqc":"/components/swipercqc/swipercqc"
+    "swipercqc":"./child/swipercqc/swipercqc",
+    "recommendcqc":"./child/recommendcqc/recommendcqc",
+    "tabcontrolcqc":"/components/tabcontrolcqc/tabcontrolcqc",
+    "goodslistcqc":"/components/goodslistcqc/goodslistcqc"
   },
   "navigationBarTitleText": "蘑菇街"
 }
