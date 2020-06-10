@@ -1,4 +1,5 @@
 <!--components/backtopcqc/backtopcqc.wxml-->
-<view class="backtop">
-<image src=""></image>
+<view class="back-top" bindtap="backtop">
+<image src="/assets/img/common/top.png"></image>
+
 </view>

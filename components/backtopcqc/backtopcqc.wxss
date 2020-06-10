@@ -1,1 +1,10 @@
 /* components/backtopcqc/backtopcqc.wxss */
+.back-top{
+  position: fixed;
+  bottom: 130rpx;
+  right: 35rpx;
+}
+.back-top image{
+  width: 70rpx;
+  height: 70rpx;
+}

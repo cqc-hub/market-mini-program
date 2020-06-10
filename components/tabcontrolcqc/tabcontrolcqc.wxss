@@ -1,28 +1,24 @@
-/* components/tabcontrolcqc/tabcontrolcqc.wxss */
-.active{
+
+.tab-control {
+  display: flex;
+  margin-bottom: 16rpx;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+
+.active {
   color: #003c8bb0;
+ 
+}
+
+.tab-item.active text {
   border-bottom: 3px solid rgba(43, 31, 34, 0.78);
   border-radius: 65%;
-}
-.tab-control{
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  font-size: 17px;
-  background-color: rgba(255,255,255,.9);
-  
-}
-.tab-control-item{
-  flex: 1;
-  height: 40px;
-  position: relative;
-  
-
-}
-.tab-control-item>text{
-  padding: 5px;
-}
-.tab-control-c{
-  display: inline-block;
-  transform: translateY(15%);
 }

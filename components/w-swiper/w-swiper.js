@@ -1,10 +1,13 @@
-// components/backtopcqc/backtopcqc.js
+// components/w-swiper/w-swiper.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    images: {
+      type: Array,
+      value: []
+    }
   },
 
   /**
@@ -18,11 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    backtop(){
-      wx.pageScrollTo({
-        complete: (res) => {},
-        scrollTop:0
-      })
-    }
+
   }
 })
