@@ -11,6 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showBackTop:false,
+    tabCTop:500,
+    fixtabbar:false,
     // 轮播图
     banner:[],
     recommend:[],
@@ -29,6 +32,14 @@ Page({
     },
     currentType:'pop'
   },
+  imgLoad(){
+    wx.createSelectorQuery().select('#tabC').boundingClientRect(rect=>{
+      console.log(rect)
+      this.setData({
+        tabCTop:rect.top
+      })
+    }).exec()
+  },
   TabControlClick(e){
     const index=e.detail.index
     this.setData({
@@ -36,6 +47,7 @@ Page({
     })
     
   },
+
   getBanners(){
      // 获取轮播图、推荐数据
     const _this=this
@@ -77,19 +89,42 @@ Page({
     this. getGoods('new')
     this. getGoods('sell')
   },
+onPageScroll(e){
+  // console.log(e.scrollTop) //612
+ const flag=e.scrollTop>300
+ if(this.data.showBackTop!=flag){
+   this.setData({
+    showBackTop:flag
+   })
+ }
+ const fixedT=e.scrollTop>this.data.tabCTop
+ if(this.data.fixtabbar!=fixedT){
+   this.setData({
+     fixtabbar:fixedT
+   })
 
+ }
+//  console.log(e.scrollTop)
+  // e.scrollTop>300 ? this.setData({
+  //   showBackTop:true
+  // }) : this.setData({
+  //   showBackTop:false
+  // })
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
+     
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

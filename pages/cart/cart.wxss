@@ -1,1 +1,13 @@
 /* pages/cart/cart.wxss */
+.cart {
+  height: 100%;
+}
+
+.cart-list {
+  height: calc(100% - 88rpx);
+}
+
+.cartEmpyt{
+  margin-top: 100rpx;
+  text-align: center;
+}

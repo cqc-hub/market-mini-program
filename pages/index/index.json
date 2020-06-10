@@ -3,7 +3,8 @@
     "swipercqc":"./child/swipercqc/swipercqc",
     "recommendcqc":"./child/recommendcqc/recommendcqc",
     "tabcontrolcqc":"/components/tabcontrolcqc/tabcontrolcqc",
-    "goodslistcqc":"/components/goodslistcqc/goodslistcqc"
+    "goodslistcqc":"/components/goodslistcqc/goodslistcqc",
+    "backtopcqc":"/components/backtopcqc/backtopcqc"
   },
   "navigationBarTitleText": "蘑菇街"
 }

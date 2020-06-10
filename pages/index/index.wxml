@@ -1,10 +1,19 @@
 <!--pages/index/index.wxml-->
+
 <view class="index-content">
+
 	<swipercqc banner="{{banner}}" />
-	<recommendcqc recommend="{{recommend}}" />
+	<recommendcqc recommend="{{recommend}}" imgLoad='imgLoad' />
 	<view class="pop">
 		<image src="/assets/index/recommend.jpg" class="pop-img"></image>
 	</view>
-	<tabcontrolcqc titles="{{titles}}" bind:TabControlClick="TabControlClick"/>
-	<goodslistcqc goods="{{goods[currentType].list}}"/>
+	<!-- <tabcontrolcqc titles="{{titles}}" bind:TabControlClick="TabControlClick" class="fixedTbc" wx:if="{{fixtabbar}}" /> -->
+	<tabcontrolcqc titles="{{titles}}" 
+									bind:TabControlClick="TabControlClick" 
+									class="{{fixtabbar ? 'fixedTbc':''}}" 
+									id="tabC"
+									/>
+	<tabcontrolcqc  titles="{{titles}}" wx:if="{{fixtabbar}}"/>
+	<goodslistcqc goods="{{goods[currentType].list}}" />
+	<backtopcqc class="backtop" wx:if="{{showBackTop}}" />
 </view>

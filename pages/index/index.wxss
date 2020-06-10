@@ -9,3 +9,18 @@
 .pop-img{
   width: 100%;
 }
+.tabfixedbar{
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: -0;
+  
+}
+.fixedTbc{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
