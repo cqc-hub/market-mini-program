@@ -1,0 +1,37 @@
+/* pages/category/childCpns/w-content/w-content.wxss */
+.content {
+  height: 100vh;
+  
+}
+
+.subcategory {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+
+.subcategory .item {
+  width: 33.33%;
+  text-align: center;
+}
+
+.subcategory .item image {
+  width: 100%;
+}
+
+.subcategory .item view {
+  font-size: 28rpx;
+  margin: 30rpx 0;
+}
+
+.detail {
+  height: clac(100% -44px);
+}
+.tabC{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 27vw;
+  z-index: 10;
+}
