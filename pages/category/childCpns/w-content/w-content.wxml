@@ -11,7 +11,7 @@
   </view> -->
 
   <!-- 2.工具栏 -->
-  <w-tab-control titles="{{['综合', '新品', '销量']}}"
+  <w-tab-control titles="{{titles}}"
                  bind:TabControlClick="TabControlClick"
                  class="tabC"
                  />

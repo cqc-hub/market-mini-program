@@ -14,6 +14,7 @@ Component({
   },
   data: {
     currentIndex: 0,
+    titles:['流行','新款','精选']
   },
   observers: {
     // categoryDetail: function (newValue) {

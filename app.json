@@ -2,9 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/profile/profile",
-    "pages/category/category",
     "pages/cart/cart",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/category/category"
   ],
   "tabBar": {
     "list": [{
