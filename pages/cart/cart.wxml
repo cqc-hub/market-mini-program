@@ -21,5 +21,5 @@
   <bottom-bar selected="{{isSelectAll}}" 
               price="{{totalPrice}}"
               counter="{{totalCounter}}"
-              bindtap="onSelectAll"/>
+              bindonSelectAll="onSelectAll"/>
 </view>

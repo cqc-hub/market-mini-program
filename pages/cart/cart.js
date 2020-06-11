@@ -81,7 +81,7 @@ Page({
       }
     }
 
-    console.log(counter, totalPrice)
+    // console.log(counter, totalPrice)
 
     // 2.修改数据
     this.setData({
